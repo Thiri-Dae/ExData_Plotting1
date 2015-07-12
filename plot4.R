@@ -26,7 +26,7 @@ plot(time, select_HHPD$Global_active_power, type = "l", xlab = "", ylab = "Globa
 plot(time, select_HHPD$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
 lines(time, select_HHPD$Sub_metering_2, col = "red")
 lines(time, select_HHPD$Sub_metering_3, col = "blue")
-legend("topright", lty= 1, col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty= 1, col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.9, bty="n")
 
 plot(time, select_HHPD$Voltage, type = "l", xlab = "datetime", ylab = "Voltage")
 
