@@ -16,7 +16,7 @@ select_HHPD <- HHPD[HHPD$Date %in% c("1/2/2007", "2/2/2007"), ]
 time <- strptime(paste(select_HHPD$Date, select_HHPD$Time), "%d/%m/%Y %H:%M:%S")
 
 ##create a file and a plots
-png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "white")
 
 ##set parameters for 4 plots
 par(mfcol = c(2,2))

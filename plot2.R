@@ -16,6 +16,6 @@ select_HHPD <- HHPD[HHPD$Date %in% c("1/2/2007", "2/2/2007"), ]
 time <- strptime(paste(select_HHPD$Date, select_HHPD$Time), "%d/%m/%Y %H:%M:%S")
 
 ##create a file and a plot
-png(filename = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot2.png", width = 480, height = 480, units = "px", bg = "white")
 plot(time, select_HHPD$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.off()
